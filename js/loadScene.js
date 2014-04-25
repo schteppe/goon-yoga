@@ -68,7 +68,6 @@ require([
 	 * @param {AnimationClip} clip
 	 */
 	function setupAnimationControl(entity, clip) {
-		//console.log();
 
 		var jointNames = clip._channels.map(function(a){
 			return a._jointName;

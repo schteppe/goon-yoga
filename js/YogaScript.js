@@ -127,7 +127,6 @@ define([
 	 * @param {object} properties
 	 * @param {ManagedTransformSource} properties.clipSource
 	 * @param {object[]} properties.joints
-	 * @param {number[3]} properties.origo Where the eyes are in world coordinates
 	 */
 	function YogaScript(properties) {
 		properties = properties || {};
@@ -135,11 +134,6 @@ define([
 		this._clipSource = properties.clipSource;
 
 		this._joints = properties.joints;
-		this._origo = new Vector3(properties.origo);
-		this._azimuth = 0;
-		this._ascent = 0;
-		this._domElement = null;
-		this._dirty = true;
 
 		this.settings = new Settings();
 
