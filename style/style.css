@@ -27,4 +27,5 @@ header p {
 header a {
 	color:black;
 	text-decoration: none;
+	font-weight: bold;
 }
